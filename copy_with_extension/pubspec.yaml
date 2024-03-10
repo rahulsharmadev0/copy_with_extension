@@ -1,0 +1,15 @@
+name: copy_with_extension
+version: 5.0.4
+description: Annotation for generating `copyWith` extensions code using `copy_with_extension_gen`.
+homepage: https://github.com/rahulsharmadev-community/copy_with_extension/tree/master/copy_with_extension
+repository: https://github.com/rahulsharmadev-community/copy_with_extension
+issue_tracker: https://github.com/rahulsharmadev-community/copy_with_extension/issues
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  meta: ^1.8.0
+
+dev_dependencies:
+  flutter_lints: ^2.0.1
