@@ -33,7 +33,8 @@ class CopyWithField {
   const CopyWithField.immutable()
       : immutable = true,
         removable = false;
-  // /// Indicates that the field should be hidden in the generated `copyWith` method. By setting this flag to `true` the field will always be copied as it is and excluded from `copyWith` interface. Default is `false`.
+
+  /// Indicates that the field should be hidden in the generated `copyWith` method. By setting this flag to `true` the field will always be copied as it is and excluded from `copyWith` interface. Default is `false`.
   final bool? immutable;
 
   /// Indicates that the field should be remove from the generated `copyWith` method.

@@ -12,17 +12,17 @@ dependencies:
   ...
   copy_with_extension:
     git:
-      url: https://github.com/rahulsharmadev-community/copy_with_extension.git
+      url: https://github.com/rahulsharmadev0/copy_with_extension.git
       ref: main
       path: copy_with_extension
     
   
 dev_dependencies:
   ...
-  build_runner: ^2.1.7
+  build: ">=2.0.0 <3.0.0"
   copy_with_extension_gen:
     git:
-      url: https://github.com/rahulsharmadev-community/copy_with_extension.git
+      url: https://github.com/rahulsharmadev0/copy_with_extension.git
       ref: main
       path: copy_with_extension_gen
 ```

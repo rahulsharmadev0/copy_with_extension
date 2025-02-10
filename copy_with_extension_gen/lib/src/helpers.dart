@@ -1,10 +1,8 @@
-import 'package:analyzer/dart/element/element.dart'
-    show ClassElement, ConstructorElement;
+import 'package:analyzer/dart/element/element.dart' show ClassElement, ConstructorElement;
 import 'package:copy_with_extension_gen/src/copy_with_annotation.dart';
 import 'package:copy_with_extension_gen/src/field_info.dart';
 import 'package:copy_with_extension_gen/src/settings.dart';
-import 'package:source_gen/source_gen.dart'
-    show ConstantReader, InvalidGenerationSourceError;
+import 'package:source_gen/source_gen.dart' show ConstantReader, InvalidGenerationSourceError;
 
 /// Generates a list of `FieldInfo` for each class field that will be a part of the code generation process.
 /// The resulting array is sorted by the field name. `Throws` on error.
@@ -12,9 +10,8 @@ List<ConstructorParameterInfo> sortedConstructorFields(
   ClassElement element,
   String? constructor,
 ) {
-  final targetConstructor = constructor != null
-      ? element.getNamedConstructor(constructor)
-      : element.unnamedConstructor;
+  final targetConstructor =
+      constructor != null ? element.getNamedConstructor(constructor) : element.unnamedConstructor;
 
   if (targetConstructor is! ConstructorElement) {
     if (constructor != null) {
@@ -77,7 +74,7 @@ CopyWithAnnotation readClassAnnotation(
 String typeParametersString(ClassElement classElement, bool nameOnly) {
   final names = classElement.typeParameters
       .map(
-        (e) => nameOnly ? e.name : e.getDisplayString(withNullability: true),
+        (e) => nameOnly ? e.name : e.getDisplayString(),
       )
       .join(',');
   if (names.isNotEmpty) {

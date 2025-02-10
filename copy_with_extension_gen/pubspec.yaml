@@ -1,27 +1,27 @@
 name: copy_with_extension_gen
-version: 5.0.4
+version: 5.0.5
 description: Automatically generating `copyWith` extensions code for classes with `@CopyWith()` annotation.
-repository: https://github.com/rahulsharmadev-community/copy_with_extension
-homepage: https://github.com/rahulsharmadev-community/copy_with_extension/tree/master/copy_with_extension_gen
-issue_tracker: https://github.com/rahulsharmadev-community/copy_with_extension/issues
+repository: https://github.com/rahulsharmadev0/copy_with_extension
+homepage: https://github.com/rahulsharmadev0/copy_with_extension/tree/master/copy_with_extension_gen
+issue_tracker: https://github.com/rahulsharmadev0/copy_with_extension/issues
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
-  analyzer: ">=2.0.0 <7.0.0"
-  build: ^2.0.0
-  source_gen: ^1.0.0
+  analyzer: ">=6.5.0 <8.0.0"
+  build: ">=2.0.0 <3.0.0"
+  source_gen: ^2.0.0
   copy_with_extension:
     git:
-      url: https://github.com/rahulsharmadev-community/copy_with_extension.git
+      url: https://github.com/rahulsharmadev0/copy_with_extension.git
       ref: main
       path: copy_with_extension
-  meta: ^1.8.0
+  meta: ^1.14.0
 
 dev_dependencies:
   equatable: ^2.0.5
   flutter_lints: ^2.0.1
-  build_runner: ">=1.11.5 <3.0.0"
-  test: ^1.20.1
+  build_runner: ">=2.4.6 <3.0.0"
+  test: ^1.24.1
   source_gen_test: ^1.0.1

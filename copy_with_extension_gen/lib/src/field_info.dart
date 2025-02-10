@@ -36,7 +36,7 @@ class ConstructorParameterInfo extends FieldInfo {
           name: element.name,
           nullable: element.type.nullabilitySuffix != NullabilitySuffix.none,
           isOptional: element.isOptional,
-          type: element.type.getDisplayString(withNullability: true),
+          type: element.type.getDisplayString(),
         );
 
   /// Annotation provided by the user with `CopyWithField`.
@@ -68,7 +68,7 @@ class ConstructorParameterInfo extends FieldInfo {
       name: field.name,
       nullable: field.type.nullabilitySuffix != NullabilitySuffix.none,
       isOptional: field.hasOptionalTypeArgs,
-      type: field.type.getDisplayString(withNullability: true),
+      type: field.type.getDisplayString(),
     );
   }
 
